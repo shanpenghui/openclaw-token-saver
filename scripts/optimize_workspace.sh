@@ -296,7 +296,7 @@ main() {
     memory_tokens=$(archive_memory_files)
     bootstrap_tokens=$(remove_bootstrap_files)
     docs_tokens=$(move_large_skill_docs)
-    trim_verbose_logs
+    trim_tokens=$(trim_verbose_logs)
     
     # Generate report
     generate_report "$memory_tokens" "$bootstrap_tokens" "$docs_tokens"
